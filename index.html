@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<style type="text/css">
+		.setWidth {
+			max-width: 100px;
+		}
+		.ellipsis div {
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: inherit;
+		}
+		.superSmaller {
+			font-variant: super;
+			font-size: smaller;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+
+		<h1>Hosts of Late Night</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="col-sm-1">#</th>
+					<th class="col-sm-2">First Name</th>
+					<th class="col-sm-2">Last Name</th>
+					<th class="col-sm-1">Twitter</th>
+					<th class="col-sm-6">Wikipedia</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Conan</td>
+					<td>O'Brien</td>
+					<td>@ConanOBrien</td>
+					<td class="setWidth ellipsis">
+						<div>
+						<a href="javascript:;" class="zoom pull-right"><i class="fa fa-plus superSmaller"></i></a>
+							Conan Christopher O'Brien (born April 18, 1963) is an American television host, comedian, writer, producer, and voice actor. He is best known for hosting several late-night talk shows, the most recent of which, Conan, premiered on American cable television station TBS in 2010. O'Brien was born in Brookline, Massachusetts, and was raised in an Irish Catholic family. He served as president of the Harvard Lampoon while attending Harvard University, and was a writer for the sketch comedy series Not Necessarily the News. After writing for several comedy shows in Los Angeles, he joined the writing staff of Saturday Night Live. O'Brien was a writer and producer for The Simpsons for two seasons until he was commissioned by NBC to take over David Letterman's position as host of Late Night in 1993. A virtual unknown to the public, O'Brien's initial time on Late Night tenure received unfavorable reviews and remained on a multiweek renewal cycle during its early years. The show generally improved over time and was highly regarded by the time of his departure in 2009. Afterwards, O'Brien relocated from New York to Los Angeles to host his own incarnation of The Tonight Show for seven months until network politics prompted a host change in 2010. Known for his spontaneous hosting style, which has been characterized as "awkward, self-deprecating humor", O'Brien's late-night programs combine the "lewd and wacky with more elegant, narrative-driven short films (remotes)".[11] He has hosted Conan since 2010 and has also hosted such events as the Emmy Awards and Christmas in Washington.[12][13] O'Brien has been the subject of a documentary, Conan O'Brien Can't Stop (2011), and has also hosted a 32-city live comedy tour.
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jimmy</td>
+					<td>Fallon</td>
+					<td>@Jimmyfallon</td>
+					<td class="setWidth ellipsis">
+						<div>
+						<a href="javascript:;" class="zoom pull-right"><i class="fa fa-plus superSmaller"></i></a>
+							James Thomas "Jimmy" Fallon (born September 19, 1974) is an American television host, comedian, actor, singer, writer, and producer. He currently hosts The Tonight Show Starring Jimmy Fallon, a late-night talk show that airs on NBC. Prior to The Tonight Show, Fallon was known as a cast member on Saturday Night Live from 1998 to 2004, and the host of Late Night with Jimmy Fallon from 2009 to 2014. On April 3, 2013, NBC announced that Fallon would replace Jay Leno as host of The Tonight Show at the conclusion of the 2014 Winter Olympics.[1] Fallon said it will be "the same show" as Late Night: "I'm not going to change anything. It's more eyeballs watching, but it's the same show."
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Seth</td>
+					<td>Meyers</td>
+					<td>@sethmeyers</td>
+					<td class="setWidth ellipsis">
+						<div>
+						<a href="javascript:;" class="zoom pull-right"> <i class="fa fa-plus superSmaller"></i></a>
+							Seth Adam Meyers (born December 28, 1973)[4] is an American comedian, writer, producer, television host, actor, and voice actor. He currently hosts Late Night with Seth Meyers, a late-night talk show that airs on NBC. Prior to that, he was a head writer for NBC's Saturday Night Live and hosted its news parody segment Weekend Update. Meyers hosted the 66th Primetime Emmy Awards on August 25, 2014, on NBC.
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+			(function() {
+
+				$(function() {
+					$('.zoom').click(function() {
+						$(this).closest('td').toggleClass('ellipsis');
+						$(this).children('i').toggleClass('fa-minus');
+					});
+				});
+
+			})();
+		//]]>
+	</script>
+</body>
+</html>
